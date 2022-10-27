@@ -1,0 +1,12 @@
+<h4>Dev</h4>
+  <ul [ngStyle]="{listStyleType:'none'}">
+    <li>{{model.lastname}}</li>
+    <li>{{model.firstname}}</li>
+    <li>{{model.age}}</li>
+    <li>{{model.gender}}</li>
+    <li>{{model.bio}}</li>
+    <li>Language : 
+        <app-skill *ngFor="let s of model.skills" [skill]="s" ></app-skill>  
+    </li>
+  </ul>
+
